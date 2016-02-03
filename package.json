@@ -1,0 +1,25 @@
+{
+  "name": "superelagraphql",
+  "version": "1.0.0",
+  "description": "a graphql server to enable best way to communicate super ela clube and other applications like superela app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FDowsley/superelagraphql.git"
+  },
+  "keywords": [
+    "superela",
+    "superelaclube",
+    "superela",
+    "app"
+  ],
+  "author": "superela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FDowsley/superelagraphql/issues"
+  },
+  "homepage": "https://github.com/FDowsley/superelagraphql#readme"
+}
