@@ -2,7 +2,7 @@
   "name": "superelagraphql",
   "version": "1.0.0",
   "description": "a graphql server to enable best way to communicate super ela clube and other applications like superela app.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "run"
   },
