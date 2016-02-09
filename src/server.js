@@ -6,11 +6,12 @@ var express = require('express');
 var data = require('./data.json');
 
 // Define our user type, with two string fields; `id` and `name`
-var userType = new graphql.GraphQLObjectType({
-  name: 'User',
+var postType = new graphql.GraphQLObjectType({
+  name: 'Post',
   fields: {
     id: { type: graphql.GraphQLString },
-    name: { type: graphql.GraphQLString },
+    title: { type: graphql.GraphQLString },
+    content: { type: graphql.GraphQLString }
   }
 });
 
@@ -20,8 +21,8 @@ var schema = new graphql.GraphQLSchema({
   query: new graphql.GraphQLObjectType({
     name: 'Query',
     fields: {
-      user: {
-        type: userType,
+      post: {
+        type: postType,
         args: {
           id: { type: graphql.GraphQLString }
         },
@@ -35,5 +36,5 @@ var schema = new graphql.GraphQLSchema({
 
 console.log('Server online!');
 express()
-  .use('/graphql', graphqlHTTP({ schema: schema, pretty: true,graphiql: true }))
+  .use('/graphql', graphqlHTTP({ schema: schema, pretty: true }))
   .listen(3000);
